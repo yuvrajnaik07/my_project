@@ -10,10 +10,11 @@ free -h
 echo -e "\nDisk Usage:"
 df -h
 
+# Display Active Logged-In Users
+echo -e "\nActive Logged-In Users:"
+who
+
 # Display Network Usage
 echo -e "\nNetwork Usage:"
 ifstat -i eth0 1 1 # replace 'eth0' with your network interface
 
-# Display Active Logged-In Users
-echo -e "\nActive Logged-In Users:"
-who
